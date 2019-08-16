@@ -3,7 +3,7 @@ import random
 from discord.ext import commands
 from discord import voice_client
 
-TOKEN = ''
+TOKEN = 'NjExOTA0ODMxMjc1MjcwMTQ4.XVam0A.Xnwu8JhFFhO9s1YF5vgnE377GWE'
 client = commands.Bot(command_prefix = '-')
 
 @client.event
@@ -14,11 +14,12 @@ async def on_ready():
 @client.event
 async def on_member_join(member):
     print(f'O(a) {member} se juntou ao bando!')
-
+'''
 @client.command()
 async def join(ctx):
     channel = ctx.message.author.voice.voice_channel
     await client.join_voice_channel(channel)
+'''
 
 @client.command(aliases=['8ball','ball'])
 async def _8ball(ctx, *, question):
